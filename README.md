@@ -29,7 +29,7 @@ Korytnačka si pamätá svoju aktuálnu polohu na kresliacej ploche a svoju rot�
 
 Korytnačka sa skladá z dvoch kruhov, kedy stred panciera je v bode v ktorom sa korytnačka nachádza a stred jej hlavy je na obvode panciera. Rozmery, farbu aj to, či sa hlava kresly nad alebo pod pancier si môžete zvoliť sami, musí však byť možné rozoznať ktorá časť je hlava, ktorá je pancier, ako aj otočenie korytnačky.
 
-// TODO obrazok
+![Korytnacka](images/korytnacka.svg)
 
 Počiatočná pozícia korytnačky by mala byť približne v strede kresliacej plochy a korytnačka by mala byť otočená smerom hore, tj. ak mám okno 700x700, z čoho ovládací panel má cca 200, tak sa korytnačka musí nachádzať cca na pozícii (350; 250).
 
@@ -57,7 +57,7 @@ Prevod stupňov na radiány a opačne je možný pomocou metód `Math.toDegrees(
 
 Keď mám bod v súradniciach `(x, y)` a mám z neho čiaru dlhú `r` pod uhlom `α`, tak rozdiel *Y* súradníc začiatočného a koncového bodu tejto čiary viem vypočítať ako `r * sin(α)` a rozdiel *X* súradníc týchto dvoch bodov viem vypočítať ako `r * cos(α)`. Tento vzorec je správny pre ľubovoľný uhol α (aj záporný aj väčší ako 2π).
 
-// TODO obrazok
+![Trigonometria](images/uhol.svg)
 
 Pozor! Súradnicová sústava displeja je iná ako klasickej súradnicovej osi, pretože *Y* stúpa smerom nadol. Uhol 0 vyjadrený relatívne ku osi *X* zodpovedá otočeniu doprava. Uhol 90° (π/2) odpovedá otočeniu dole!
 
