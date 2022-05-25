@@ -15,7 +15,7 @@ public class ExamRT extends JFrame {
         super(APP_NAME);
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(400,600);
+        this.setSize(800,800);
         this.setResizable(false);
         this.setLayout(new BorderLayout());
 
@@ -52,7 +52,7 @@ public class ExamRT extends JFrame {
         sideMenu.add(color);
         sideMenu.add(logic.getColorLabel());
 
-        this.add(sideMenu, BorderLayout.PAGE_START);
+        this.add(sideMenu, BorderLayout.PAGE_END);
         this.add(logic.getCanvas(), BorderLayout.CENTER);
 
         this.addKeyListener(logic);

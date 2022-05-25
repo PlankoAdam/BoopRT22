@@ -26,7 +26,7 @@ public class Logic extends UniversalAdapter {
     private int angle;
 
     public Logic() {
-        this.turtle = new Turtle(200, 300);
+        this.turtle = new Turtle(400, 300);
         this.canvas = new Canvas(turtle);
         this.color = Color.RED;
         this.angleLabel = new JLabel("0");
