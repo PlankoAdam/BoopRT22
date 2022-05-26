@@ -98,49 +98,49 @@ Vypracovanie skúšky odovzdajte cez Github classroom vykonaním commit a push z
 # Exam RT \[60b], 26.05.2022 10:00
 B-OOP 2022
 
-Your task is to create a java window application. The application allows the user to draw a lines with turtle (something like program Imagine). The application has the following functionality (40 points):
+Your task is to create a java window application. The application allows the user to draw lines with a turtle (something like the program "Imagine"). The application has the following functionality (40 points):
 
 1. Creation of the main window, that will contain control elements and a drawing area \[10b].
 2. Correct shape of the turtle \[5b].
-3. Moving turtle with Action button in menu \[10b].
-4. Moving turtle with keyboard inputs \[10b].
+3. Moving the turtle with Action button in menu \[10b].
+4. Moving the turtle with keyboard inputs \[10b].
 4. Selection of the drawing color through a [JButton](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html) \[4pts].
 5. Closing the application with the "close window" button provided by the operating system \[1pt].
 
 ## Description for bullet point 1:
 Most of the window area will be covered by the drawing area. The bottom part of the window will contain the control elements. The control elements consist of:
-1. [JCombobox](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html) which will be for changing the angle of the turtle, possible angles are (in degrees): {0, 5 ,10, 45, 90 , 180}, initial is 45,
-2. [JSlider](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html) which will be for changing the size of the line that turtle will be drawing, slider values are from 0 to 100 with step 10, 10 is initial state,
-3. [JButton](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html) “Action”, which will rotate turtle for selected angle move turtle for selected distance,
-4. [JLabel](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html) which show actual selected distance and angle for turtle,
-5. [JButton](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html) "Farba", ktorý vykoná zmenu farby čiary, ktorú bude najbližšie korytnačka kresliť,
-6. [JLabel](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html) ktorý ukazuje aktuálne zvolenú farbu
+1. [JCombobox](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html) which changes the movement angle of the turtle, possible angles are (in degrees): {0, 5 ,10, 45, 90 , 180}, initial is 45,
+2. [JSlider](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html) which will be for changing the length of the line the turtle draws, slider values are from 0 to 100 with step 10, 10 is the initial state,
+3. [JButton](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html) “Action”, which will rotate the turtle by the selected angle and move the turtle forward by the selected distance,
+4. [JLabel](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html) which displays the currently selected distance and angle of the turtle,
+5. [JButton](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html) "Color", which changes the color of the lines, that will be drawn by the turtle when it moves,
+6. [JLabel](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html) which displays the currently selected color
 
-Každý z týchto prvkov musí zaberať šestinu celkového miesta vyhradeného pre ovládacie prvky (napr. Grid 2x3).
+Each of these elements must take up a sixth of the available space (eg. Grid 2x3).
 
-## Podrobný popis k bodu 2:
+## Description for bullet point 2:
 
-Korytnačka si pamätá svoju aktuálnu polohu na kresliacej ploche a svoju rotáciu. Bod, ktorý určuje polohu korytnačky, ako aj stred jej otáčania sú totožné a nachádzajú sa v strede jej panciera. Hlava korytnačky musí byť vykreslená tak aby zobrazovala jej aktuálny uhol otočenia (keď sa korytnačka pozerá hore, tak hore, keď doprava tak v pravo, a rovnako pre ľubovoľný uhol).
+The turtle remembers its position on the drawing area, and its rotation. The point that specifies the position of the turtle and the point that the turtle rotates around are the same point, and it is located in the center of the turtles shell. The head of the turtle must be drawn in such a way, that it mimics its current rotation (if the turtle is rotated upwards then up, if it is rotated to the left, then left and similarly for any angle).
 
-Korytnačka sa skladá z dvoch kruhov, kedy stred panciera je v bode v ktorom sa korytnačka nachádza a stred jej hlavy je na obvode panciera. Rozmery, farbu aj to, či sa hlava kresly nad alebo pod pancier si môžete zvoliť sami, musí však byť možné rozoznať ktorá časť je hlava, ktorá je pancier, ako aj otočenie korytnačky.
+The turtle consists of two circles, the center of its shell is located at the position of the turtle and the center of its head is on the perimeter of the shell. The dimensions, colors and whether the head is drawn behind or in front of the shell is up to you, it must be clear however, which part is the shell, which part is the head and which way is the turtle looking.
 
 ![Korytnacka](images/korytnacka.svg)
 
-Počiatočná pozícia korytnačky by mala byť približne v strede kresliacej plochy a korytnačka by mala byť otočená smerom hore, tj. ak mám okno 700x700, z čoho ovládací panel má cca 200, tak sa korytnačka musí nachádzať cca na pozícii (350; 250).
+The initial position of the turtle should be roughly in the center of the drawing area and the turtle should be facing upwards, that is if the windows is 700x700, and the control panel is 200 high, then the turtle should be roughly at the position (350; 250).
 
-## Podrobný popis k bodu 3:
+## Description for bullet point 3:
 
-Stlačením tlačidla Akcia sa má vykonať otočenie korytnačky o zvolený uhol a posun dopredu o zvolený krok. Svojím posunom korytnačka v danom smere nakreslí čiaru aktuálne zvolenou farbou. Čiara smeruje zo starej pozície korytnačky na jej novú pozíciu (stred panciera). Čiara sa kreslí vždy *POD* korytnačku.
+When you press the "Action" button, the turtle should rotate by the selected angle to the right and then move forward by the selected distance. By moving forward the turtle draws a line with the selected color. The line starts at the previous location of the turtle and ends at its new location (center of the shell). The lines are always drawn *UNDER* the turtle. 
 
-## Podrobný popis k bodu 4:
+## Description for bullet point 4:
 
-Korytnačka sa má vedieť pohybovať aj pomocou stlačenia kláves, konkrétne šípiek.
-Stlačením šípky hore sa má korytnačka posunúť o zvolený krok dopredu a nakresliť čiaru (ako je uvedené v bode 3).
-Stlačením šípky dole sa má korytnačka posunúť o zvolený krok dozadu a nakresliť čiaru.
-Stlačením šípky doľava sa má korytnačka otočíť o zvolený uhol doľava,
-Stlačením šípky doprava sa má korytnačka otočiť o zvolený uhol doprava.
+The turtle is able to move with the help of the arrow keys.
+By pressing the UP arrow key, the turtle moves by the selected distance forward and draws a line (as specified in point 3).
+By pressing the DOWN arrow key, the turtle moves by the selected distance forward and draws a line.
+By pressing the LEFT arrow key, the turtle turns to the left by the selected angle.
+By pressing the RIGHT arrow key, the turtle turns to the right by the selected angle.
 
-## Podrobný popis k bodu 5:
+## Description for bullet point 5:
 
 Spomedzi ovládacích prvkov bude Button "Farba" slúžiť na výber farby a Label na grafické znázornenie aktuálne  zvolenej farby. Program umožňuje zvoliť minimálne 3 farby v nejakom fixnom poradí (napr. červená > modrá > zelená). Tlačidlom sa aktívna farba zmení na nasledujúcu farbu v poradí. Pokiaľ sa v zozname farieb nachádzame na poslednom prvku, tak za ním nasleduje opäť prvá farba (t.j. červená > modrá > zelená > červená > ...). Pri spustení aplikácie je automaticky zvolená jedna z týchto farieb. Práve kreslené čiary majú farbu zvolenú podľa aktuálnej farby. Farby môžu byť ľubovoľné, podmienkou ale je, aby boli viditeľné na kresliacej ploche. Po výbere farby sa zmení text Label-u podľa aktuálnej farby. Zmena farby ovplyvňuje len nové čiary, už nakreslené čiary si musia zachovať svoju farbu!
 
