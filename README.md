@@ -89,6 +89,8 @@ Okrem funkcionality budú hodnotené aj princípy Objektovo orientovaného progr
 
 Za každy nedostatok vám možu byť strhnuté cca 3-4 body.
 
+Pokiaľ vaše riešenie neobsahuje dostatok implementácie je možné za OOP získať maximálne [10b].
+
 ## Odovzdanie
 
 Vypracovanie skúšky odovzdajte cez Github classroom vykonaním commit a push zdrojového kódu do vášho repozitára v skupine Interes-Group (tak ako na zadaniach). Hodnotí sa posledný pushnutý commit pred časom ukončenia skúšky (bude oznámený po začatí skúšky). Odovzdáva sa obsah celého projektu. Na vypracovanie písomky je vyhradený čas 3 hodiny.
@@ -184,6 +186,8 @@ Appart from the functionality, the principles of Object-Oriented Programming wil
 * Null layout
 
 Za každy nedostatok vám možu byť strhnuté cca 3-4 body.
+
+Pokiaľ vaše riešenie neobsahuje dostatok implementácie je možné za OOP získať maximálne [10b].
 
 ## Handing in the assigment
 
