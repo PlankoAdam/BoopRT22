@@ -142,20 +142,19 @@ By pressing the RIGHT arrow key, the turtle turns to the right by the selected a
 
 ## Description for bullet point 5:
 
-Spomedzi ovládacích prvkov bude Button "Farba" slúžiť na výber farby a Label na grafické znázornenie aktuálne  zvolenej farby. Program umožňuje zvoliť minimálne 3 farby v nejakom fixnom poradí (napr. červená > modrá > zelená). Tlačidlom sa aktívna farba zmení na nasledujúcu farbu v poradí. Pokiaľ sa v zozname farieb nachádzame na poslednom prvku, tak za ním nasleduje opäť prvá farba (t.j. červená > modrá > zelená > červená > ...). Pri spustení aplikácie je automaticky zvolená jedna z týchto farieb. Práve kreslené čiary majú farbu zvolenú podľa aktuálnej farby. Farby môžu byť ľubovoľné, podmienkou ale je, aby boli viditeľné na kresliacej ploche. Po výbere farby sa zmení text Label-u podľa aktuálnej farby. Zmena farby ovplyvňuje len nové čiary, už nakreslené čiary si musia zachovať svoju farbu!
+The "Color" button switches the currently selected color and the associated label displays what color is selected. The application allows the selection of at leas 3 colors in som fixed order (eg. red > blue > green). By pressing the button the selected color changes to the next in the sequence. If the last color is selected, then the button changes it to the first (i.e. red > blue > green > red > ...). At the start of the application one of the colors is selected by default. Any new lines are drawn with the currently selected color. You can freely choose the colors, but they must be visible on the drawing area. When the color changes the text of the label that displays it changes accordingly. Changing the color affects only future lines, the existing lines are always drawn with their original color!
 
-## Opakovanie trigonometrie
+## Trigonometry cheat-sheet
 
-Trigonometrické funkcie sa nachádzajú ako statické metódy v triede `Math` (`Math.sin()`, `Math.cos()`) a berú ako argument uhol v *RADIÁNOCH*.
+Trigonometric functions are available as static methods of the `Math` class (`Math.sin()`, `Math.cos()`) and take the angle in *RADIANS* as an argument.
 
-Prevod stupňov na radiány a opačne je možný pomocou metód `Math.toDegrees()` a `Math.toRadians()`. Pripomíname, že 360° = 2π radiánov. Ak by ste potrebovali hodnotu cisla π, tak použite konštantu `Math.PI`.
+Transforming an angle from degrees to radians and back can be done with the `Math.toDegrees()` and `Math.toRadians()` methods. Reminder: 360° = 2π radians. Should you need the value of π use the `Math.PI` constant.
 
-Keď mám bod v súradniciach `(x, y)` a mám z neho čiaru dlhú `r` pod uhlom `α`, tak rozdiel *Y* súradníc začiatočného a koncového bodu tejto čiary viem vypočítať ako `r * sin(α)` a rozdiel *X* súradníc týchto dvoch bodov viem vypočítať ako `r * cos(α)`. Tento vzorec je správny pre ľubovoľný uhol α (aj záporný aj väčší ako 2π).
+If I have a point at `(x, y)` where a line of length `r` and angle `α` originates, then the difference of the *Y* coordinate of the starting point and end point of the line can be calculated as `r * sin(α)` and the difference of the *X* coordinate of these two points can be calculated as `r * cos(α)`. This calculation is correct for any angle α (even negative or greater than 2π).
 
 ![Trigonometria](images/uhol.svg)
 
-Pozor! Súradnicová sústava displeja je iná ako klasickej súradnicovej osi, pretože *Y* stúpa smerom nadol. Uhol 0 vyjadrený relatívne ku osi *X* zodpovedá otočeniu doprava. Uhol 90° (π/2) odpovedá otočeniu dole!
-
+Be careful! The coordinate system of the screen is different from the classical system of X and Y axes. On a screen the *Y* coordinate increases downwards. An angle of 0 relative to the *X* axis expresses a rotation facing to the right. An angle of 90° (π/2) expresses a rotation facing downwards!
 
 ## Grading
 
@@ -187,4 +186,4 @@ Za každy nedostatok vám možu byť strhnuté cca 3-4 body.
 
 ## Handing in the assigment
 
-Hand in the assignment into your Github classroom repository for this exam. Hand in the entire project. You have 3 hours to complete the exam.
+Hand in the assignment into your Github classroom repository located under the Interes-Group for this exam. Hand in the entire project. You have 3 hours to complete the exam.
