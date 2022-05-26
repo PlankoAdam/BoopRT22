@@ -79,12 +79,12 @@ Okrem funkcionality budú hodnotené aj princípy Objektovo orientovaného progr
 * nedodržanie konvencií,
 * použitie keyStroke,
 * použitie vnorených tried (nested class),
-* použitie statických metód alebo nekonštantných statických premenných
+* použitie statických metód alebo nekonštantných statických premenných,
 * celá aplikácia naprogramovaná v jednej triede,
 * inicializacia atributov triedy pri ich vytvoreni,
-* kontrola kláves bez java konštánt (VK_)
-* vykreslovanie textu cez kresliacu plochu
-* keylistener prestane fungovať po stlačení niečoho v menu,
+* kontrola kláves bez java konštánt (VK_),
+* vykreslovanie textu cez kresliacu plochu,
+* keyListener prestane fungovať po stlačení niečoho v menu,
 * Null layout
 
 Za každy nedostatok vám možu byť strhnuté cca 3-4 body.
@@ -166,27 +166,27 @@ The project contains a github pipeline, that checks whether it can be compiled o
 
 Appart from the functionality, the principles of Object-Oriented Programming will be graded as well (20 pts), pay close attention especially to:
 
-* správne modifikátory prístupu,
-* vhodné pomenovanie tried a metód,
-* vhodné využitie dedenia a polymorfizmu
-* vhodné použitie výnimiek na ošetrenie nedovoleného správania (nehádzať a nezachytávať všeobecnú triedu Exception),
-* stavové premenné ako int alebo String,
-* duplicitný kód,
-* unused kód,
-* nedodržanie konvencií,
-* použitie keyStroke,
-* použitie vnorených tried (nested class),
-* použitie statických metód alebo nekonštantných statických premenných
-* celá aplikácia naprogramovaná v jednej triede,
-* inicializacia atributov triedy pri ich vytvoreni,
-* kontrola kláves bez java konštánt (VK_)
-* vykreslovanie textu cez kresliacu plochu
-* keylistener prestane fungovať po stlačení niečoho v menu,
+* correct access modifiers,
+* appropriate naming of classes and methods,
+* appropriate use of inheritance and polymorphism,
+* appropriate use of exceptions for handling illegal behavior (do not throw or catch the generic Exception class),
+* usage of int or String state variables,
+* duplicate code,
+* unused code,
+* usage of the java language conventions,
+* usage of keyStroke,
+* usage of nested classes,
+* usage of static methods or non-final static variables,
+* the entire application being coded in one class,
+* initialisation of class attributes at declaration,
+* comparing key codes without the java constants (VK_),
+* drawing text over the drawing area,
+* keyListener stops working when a menu element is clicked,
 * Null layout
 
-Za každy nedostatok vám možu byť strhnuté cca 3-4 body.
+For each mistake you may lose around 3-4 points.
 
-Pokiaľ vaše riešenie neobsahuje dostatok implementácie je možné za OOP získať maximálne [10b].
+If your solution does not contain enough implementation you may get at most [10 pts] for OOP.
 
 ## Handing in the assigment
 
