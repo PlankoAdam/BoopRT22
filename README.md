@@ -3,7 +3,7 @@ B-OOP 2022
 
 Vytvorte oknovú aplikáciu, ktorá umožní používateľovi kresliť čiary pomocou korytnačky (niečo na štýl programu Imagine). Aplikácia bude mať nasledovnú funkcionalitu (40 bodov):
 
-1. Vytvorenie hlavného okna, ktoré bude obsahovať funkčné Ovládacie prvky (formou menu) a Kresliacu plochu \[10b].
+1. Vytvorenie hlavného okna, ktoré bude obsahovať funkčné Ovládacie prvky a Kresliacu plochu \[10b].
 2. Správny tvar korytnačky \[5b].
 3. Posun korytnačky pomocou akcie v menu \[10b].
 4. Posun korytnačky pomocou klávesnice \[10b].
@@ -15,7 +15,7 @@ Vytvorte oknovú aplikáciu, ktorá umožní používateľovi kresliť čiary po
 Väčšinu plochy okna bude zaberať Kresliaca plocha. V dolnej časti okna sa budú nachádzať Ovládacie
 prvky. Ovládacie prvky budú tvoriť:
 1. [JCombobox](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JComboBox.html) ktorý bude slúžiť na zmenu uhlu pohybu korytnačky, pričom možné ulhy sú (v stupňoch): {0, 5 ,10, 45, 90 , 180}, počiatočný je 45,
-2. [JSlider](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html) ktorý bude slúžiť na zmenu veľkosťi kroku korytnačky , pričom slider je nastavený od 0 po 100 s krokom 10, 10 je počiatočný stav,
+2. [JSlider](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JSlider.html) ktorý bude slúžiť na zmenu veľkosti kroku korytnačky , pričom slider je nastavený od 0 po 100 s krokom 10, 10 je počiatočný stav,
 3. [JButton](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html) “Akcia”, ktorý vykoná pohyb korytnačky o vybraný uhol a krok,
 4. [JLabel](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JLabel.html) ktorý ukazuje aktuálne zvolenú velkosť kroku a uhol korytnačky,
 5. [JButton](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/javax/swing/JButton.html) "Farba", ktorý vykoná zmenu farby čiary, ktorú bude najbližšie korytnačka kresliť,
@@ -35,7 +35,7 @@ Počiatočná pozícia korytnačky by mala byť približne v strede kresliacej p
 
 ## Podrobný popis k bodu 3:
 
-Stlačením tlačidla Akcia sa má vykonať otočenie korytnačky o zvolený uhol posun dopredu o zvolený krok. Svojím posunom korytnačka v danom smere nakreslí čiaru aktuálne zvolenou farbou. Čiara smeruje z starej pozície korytnačky na jej novú pozíciu (stred panciera). Čiara sa kreslí vždy *POD* korytnačku.
+Stlačením tlačidla Akcia sa má vykonať otočenie korytnačky o zvolený uhol a posun dopredu o zvolený krok. Svojím posunom korytnačka v danom smere nakreslí čiaru aktuálne zvolenou farbou. Čiara smeruje zo starej pozície korytnačky na jej novú pozíciu (stred panciera). Čiara sa kreslí vždy *POD* korytnačku.
 
 ## Podrobný popis k bodu 4:
 
