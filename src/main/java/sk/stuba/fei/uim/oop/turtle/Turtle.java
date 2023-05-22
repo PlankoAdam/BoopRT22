@@ -34,12 +34,6 @@ public class Turtle {
         g.setColor(originalColor);
     }
 
-    public void move(int length, int angle) {
-        x += (int) (length * Math.cos(Math.toRadians(this.angle)));
-        y += (int) (length * Math.sin(Math.toRadians(this.angle)));
-        this.angle += angle;
-    }
-
     public void forward(int length) {
         x += (int) (length * Math.cos(Math.toRadians(this.angle)));
         y += (int) (length * Math.sin(Math.toRadians(this.angle)));

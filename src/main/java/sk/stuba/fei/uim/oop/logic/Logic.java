@@ -10,7 +10,6 @@ import javax.swing.event.ChangeEvent;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
-import java.text.spi.BreakIteratorProvider;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -18,8 +17,8 @@ import java.util.Map;
 
 public class Logic extends UniversalAdapter{
 
-    private Canvas canvas;
-    private Turtle turtle;
+    private final Canvas canvas;
+    private final Turtle turtle;
 
     private int length;
     private int angle;
@@ -33,7 +32,7 @@ public class Logic extends UniversalAdapter{
     @Getter
     private final JLabel colorLabel;
 
-    private HashMap<Color, String> colors;
+    private final HashMap<Color, String> colors;
     private Iterator<Map.Entry<Color, String>> iterator;
 
     public Logic(Canvas canvas) {

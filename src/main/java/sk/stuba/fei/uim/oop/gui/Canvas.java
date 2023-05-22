@@ -12,7 +12,7 @@ import java.util.List;
 
 public class Canvas extends JPanel {
 
-    private List<Line> lines;
+    private final List<Line> lines;
     @Getter
     private final Turtle turtle;
     @Setter
