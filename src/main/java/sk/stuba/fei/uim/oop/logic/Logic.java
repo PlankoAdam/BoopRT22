@@ -81,9 +81,9 @@ public class Logic extends UniversalAdapter{
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         if (actionEvent.getActionCommand().equals("Draw")) {
+            turtle.turnRight(angle);
             canvas.add(new Line(turtle.getX(), turtle.getY(), length, turtle.getAngle(), canvas.getCurrentColor()));
             turtle.forward(length);
-            turtle.turnRight(angle);
         } else if (actionEvent.getActionCommand().equals("Change color")) {
             if (!iterator.hasNext()) {
                 iterator = colors.entrySet().iterator();
